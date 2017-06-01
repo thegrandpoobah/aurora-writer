@@ -49,11 +49,9 @@ var config = {
       title: 'Aurora Writer',
       template: 'index.html'
     })
-    // new CopyPlugin([{
-    //   from: 'src/public',
-    //   to: 'dist'
-    // }])
-  ]
+  ],
+  devtool: 'source-map',
+  target: 'electron'
 }
 
 module.exports = config

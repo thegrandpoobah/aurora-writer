@@ -38,7 +38,12 @@
     "webpack": "^2.6.1"
   },
   "dependencies": {
+    "electron": "^1.6.10",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.6.0",
+    "wintersmith": "^2.3.6"
   }
 }
