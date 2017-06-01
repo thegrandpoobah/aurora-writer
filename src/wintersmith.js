@@ -1,11 +1,12 @@
-const async = require('async')
-const {ncp} = require('ncp')
-const npm = require('npm')
-const path = require('path')
-const wintersmith = require('wintersmith')
+import async from 'async'
+import { ncp } from 'ncp'
+import nmp from 'npm'
+import path from path
+import wintersmith from 'wintersmith'
 
 function copyTemplate(opts, callback) {
   console.log('Copying Template')
+
   return ncp(opts.from, opts.to, {}, callback)
 }
 
@@ -38,18 +39,6 @@ function build(opts, callback) {
 
     callback()
   })
-
-  // // preview
-  // env.preview(function(error, server) {
-  //   if (error) throw error;
-  //   console.log('Server running!');
-  // });
-
-  // do something with the content tree
-  // env.load(function(error, result) {
-  //   if (error) throw error;
-  //   console.log('Contents loaded!');
-  // });
 }
 
 function createSite(opts) {
@@ -61,7 +50,6 @@ function createSite(opts) {
     if (error) {
     } else {
       console.log('Woo! Steve Holt!')
-      // this means we rock
     }
   })
 }
