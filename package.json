@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "wintersmith": "^2.3.6"
   }
 }
