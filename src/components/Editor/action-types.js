@@ -1,0 +1,2 @@
+export const LOAD_CONTENTS = 'LOAD_CONTENTS'
+export const UPDATE_CONTENTS = 'UPDATE_CONTENTS'

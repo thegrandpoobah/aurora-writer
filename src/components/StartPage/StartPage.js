@@ -15,6 +15,8 @@ class StartPage extends Component {
       to: '/tmp/winter'
     }).then((response) => {
       console.log('complete', response)
+
+      this.props.history.push('/editor')
     })
   }
 

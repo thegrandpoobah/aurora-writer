@@ -1,4 +1,4 @@
-import { ipcRenderer } from 'electron'
+ import { ipcRenderer } from 'electron'
 
 const sendCommand = (command, args) => {
   return new Promise((resolve, reject) => {
@@ -11,4 +11,12 @@ const sendCommand = (command, args) => {
 
 export const generateSite = (args) => {
   return sendCommand('generate-site', args)
+}
+
+export const loadContents = (args) => {
+  return sendCommand('load-contents', args)
+}
+
+export const updateContents = (args) => {
+  return sendCommand('update-contents', args)
 }

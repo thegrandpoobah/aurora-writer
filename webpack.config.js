@@ -17,8 +17,8 @@ var jsLoader = {
   exclude: [/node_modules/, /templates/],
   query: {
     cacheDirectory: true,
-    plugins: ['transform-runtime', 'transform-es2015-parameters'],
-    presets: ['es2015', 'react', 'stage-2', 'latest']
+    // plugins: ['transform-runtime', 'transform-es2015-parameters'],
+    presets: ['es2015', 'react', 'stage-3']
   }
 }
 
@@ -36,6 +36,11 @@ var loaders = [
 
 var config = {
   entry: [path.resolve(__dirname, 'src/app.js')],
+  resolve: {
+    alias: {
+      components: path.resolve(__dirname, 'src/components')
+    }
+  },
   module: {
     loaders: loaders
   },
